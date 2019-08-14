@@ -73,7 +73,7 @@ export class GameFormComponent implements OnInit {
           confirmButtonText: 'Si,  Editar!'
         }).then((result) => {
           if (result.value) {
-                delete this.game.created_at;
+                // delete this.game.created_at;
                  this.gameService.updateGame(this.game.id, this.game)
                   .subscribe(
                      res => { 
