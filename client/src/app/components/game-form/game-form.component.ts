@@ -43,7 +43,7 @@ export class GameFormComponent implements OnInit {
   }
 
   saveNewGame() {
-    delete this.game.created_at;
+    // delete this.game.created_at;
     delete this.game.id;
     this.gameService.saveGame(this.game)
       .subscribe(
